@@ -1,15 +1,22 @@
+:root {
+    --main-font: 'Poppins', sans-serif;
+    --main-color: #333333;
+    --accent-color: #007000;
+    --bg-light: #ffffff;
+    --bg-dark: #333333;
+}
 * {
     box-sizing: border-box;
 }
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font);
 }
 body {
     min-width: 900px;
     line-height: 1.5;
-    color: #333333;
+    color: var(--main-color);
 }
 main {
     width: 900px;
@@ -78,7 +85,7 @@ ul {
     margin: 0;
 }
 .hero-heading span {
-    color: #007000;
+    color: var(--accent-color);
     font-weight: 700;
     line-height: 1;
 }
@@ -115,7 +122,7 @@ ul {
     margin: 0;
 }
 .info a {
-    color: #007000;
+    color: var(--accent-color);
     text-decoration: underline;
 }
 .statistics {
@@ -162,14 +169,14 @@ ul {
     width: 700px;
     margin: 0 auto;
     padding: 40px;
-    border: 2px solid #333333;
+    border: 2px solid var(--main-color);
 }
 .about-heading {
     margin: 0;
     font-size: 3rem;
 }
 .about span {
-    color: #007000;
+    color: var(--accent-color);
 }
 .about-link {
     margin-top: 30px;
@@ -222,7 +229,7 @@ ul {
 
 /* Footer */
 .footer {
-    background-color: #333333;
+    background-color: var(--bg-dark);
     margin-top: 100px;
 }
 .social-links {
@@ -232,7 +239,7 @@ ul {
     margin: 0 auto;
     padding: 20px 40px;
     width: 800px;
-    color: #ffffff;
+    color: var(--bg-light);
 }
 .social-links p {
     display: inline;

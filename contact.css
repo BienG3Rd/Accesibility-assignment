@@ -1,11 +1,18 @@
+:root {
+    --main-font: 'Poppins', sans-serif;
+    --main-color: #333333;
+    --accent-color: #007000;
+    --bg-light: #ffffff;
+}
 html, body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    color: #333333;
+    color: var(--main-color);
+    font-family: var(--main-font);
 }
 body, .contact-input, .contact-textarea  {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font);
 }
 .contact-page {
     min-height: 100vh;
@@ -30,11 +37,15 @@ body, .contact-input, .contact-textarea  {
     margin: 0;
 }
 .contact-form-heading span {
-    color: #007000;
+    color: var(--accent-color);
 }
 .contact-form-intro {
     font-size: 1.25rem;
     margin-bottom: 20px;
+}
+.contact-input, .contact-textarea, .contact-submit-button {
+    font-family: var(--main-font);
+    border: 2px solid var(--main-color);
 }
 .contact-input {
     display: block;
@@ -43,26 +54,27 @@ body, .contact-input, .contact-textarea  {
     border-radius: 20px;
     padding: 8px 20px;
     font-size: 1rem;
-    border: 2px solid #333333;
+    color: var(--main-color);
 }
 .contact-textarea {
     max-width: 300px;
     margin: 5px auto 15px;
     padding: 16px 20px;
-    border: 2px solid #333333;
+    border: 2px solid var(--main-color);
     border-radius: 20px;
+    color: var(--main-color);
 }
 .contact-input::-webkit-input-placeholder, .contact-textarea::-webkit-input-placeholder {
     color: #555555;
 }
 .contact-submit-button {
-    border: 2px solid #333333;
+    border: 2px solid var(--main-color);
     padding: 8px 20px;
     border-radius: 40px;
     margin: 10px auto 0;
     width: 200px;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
+    color: var(--main-color);
 }
 .contact-submit-button:hover {
     background-color: #dddddd;
